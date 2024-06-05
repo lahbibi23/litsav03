@@ -1,0 +1,130 @@
+.contact-Nous{
+    margin: 90%;
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 5rem;
+}
+
+
+
+section.contact-Nous .icon-envelope {
+    color: rgb(70, 68, 68);
+    margin-right: 1rem;
+    font-size: 1.8rem;
+  }
+  
+  section.contact-Nous .tiitle {
+    font-size: 1.5rem;
+    color: var(--title);
+    margin-bottom: 1rem;
+  }
+  
+  section.contact-Nous .sub-tiitle {
+    color: rgb(70, 68, 68);
+    margin-bottom: 2rem;
+    line-height: 1.65rem;
+  }
+  
+  section.contact-Nous label {
+    color:rgb(70, 68, 68);
+  }
+  
+  section.contact-Nous #email,
+  section.contact-Nous #message {
+    all: unset;
+    background-color: rgba(63, 63, 70, 0.15);
+    border: 1px solid rgb(217, 217, 219);
+    width: 16rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 1.1rem;
+  }
+  
+  .light section.contact-Nous #email,
+  .light section.contact-Nous #message {
+    background-color: rgba(255, 255, 255, 0.162);
+    border: 1px solid rgba(128, 128, 128, 0.451);
+    box-shadow: 1px 1px 1px rgba(73, 73, 75, 0.105);
+    color: #232324;
+  }
+  
+  section.contact-Nous #email:focus,
+  section.contact-Nous #message:focus,
+  section.contact-Nous #email:hover,
+  section.contact-Nous #message:hover {
+    border: 1px solid rgb(45 212 191);
+  }
+  
+  .light section.contact-Nous #email:focus,
+  .light section.contact-Nous #message:focus,
+  .light section.contact-Nous #email:hover,
+  .light section.contact-Nous #message:hover {
+    border: 1px solid rgb(78, 80, 80);
+  }
+  
+   
+  
+  section.contact-Nous #message {
+    min-height: 9rem;
+    resize: vertical;
+  }
+  
+  section.contact-Nous .submit {
+    background-color:rgb(134, 138, 180)
+    ;
+  
+    padding: 0.75rem 2rem;
+    text-align: center;
+    font-size: 1.05rem;
+    text-transform: capitalize;
+  
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 1.8rem;
+    border: 1px solid  rgb(217, 217, 219);
+  }
+  
+  section.contact-Nous .submit:hover {
+    scale: 0.97;
+  }
+  
+  /* =====================================
+    3- Responsive Design (media query)
+  ======================================== */
+  
+  
+  @media (max-width: 1250px) {
+    section.contact-Nous  .contact-animation{display: none;}
+  
+  }
+  
+  
+  @media (max-width: 600px) {
+   s
+  
+    section.contact-Nous form {
+      display: flex;
+      flex-direction: column;
+      width: 85%;
+    }
+  
+    section.contact-Nous form div.flex {
+      flex-direction: column;
+      align-items: start;
+    }
+  
+    section.contact-Nous #email,
+    section.contact-Nous #message {
+      width: 100%;
+      margin-left: 0;
+      padding: 0.7rem 0;
+      margin-top: 1rem;
+    }
+  
+    section.contact-Nous .submit {
+      width: 30%;
+      align-self: center;
+    }
+  }

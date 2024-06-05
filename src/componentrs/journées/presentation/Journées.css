@@ -1,0 +1,119 @@
+.slide-container {
+  margin: 2rem;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.slide-container img {
+  width: 50%;
+  height: 50%;
+  border-radius: 5px;
+  margin-left: auto;
+  margin-right: auto;
+}
+ h3{
+  color: var(--title);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+.presentation {
+  color: var(--sub-title);
+  line-height: 2rem;
+  padding:  1.5rem; 
+  font-family: 'Times New Roman', Times, serif ;
+  font-size: 18px;
+}
+
+.détails {
+  gap: 2rem;
+  justify-content: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.détails section {
+  border: 1px solid rgba(178, 183, 186, 0.3);
+  border-radius: 5px;
+  transition: 0.3ms;
+  padding: 2rem;
+  text-align: center;
+}
+
+.détails section:hover {
+
+  background-color: rgba(178, 183, 186, 0.3); 
+}
+
+.themes-container {
+  justify-content: center;
+  width: 90%;
+  margin-left: auto;
+  margin-right: auto;
+  gap: 2rem;
+  margin: 2rem;
+
+}
+
+.themes-container .theme {
+  border: 1px solid rgba(178, 183, 186, 0.3);
+  border-radius: 5px;
+  transition: 0.3ms;
+  padding: 2rem;
+  text-align: center;
+  font-family: 'Times New Roman', Times, serif;
+
+  font-size: 35px;
+}
+
+
+.themes-container .theme:hover {
+ background-color: rgba(178, 183, 186, 0.3); 
+ 
+
+}
+
+.icon-location_on , .icon-calendar1{
+  margin-left: 1rem;
+  margin-right: 1rem;
+  color:black ;
+  font-weight: bolder;
+}
+
+
+
+/* =====================================
+    3- Responsive Design (media query)
+  ======================================== */
+
+@media (max-width: 600px) {
+  section.contact-us .animation {
+    display: none;
+  }
+
+  section.contact-us form {
+    display: flex;
+    flex-direction: column;
+    width: 85%;
+  }
+
+  section.contact-us form div.flex {
+    flex-direction: column;
+    align-items: start;
+  }
+
+  section.contact-us #email,
+  section.contact-us #message,
+  section.contact-us #fullName {
+    width: 100%;
+    margin-left: 0;
+    padding: 0.7rem 0;
+    margin-top: 1rem;
+  }
+
+  section.contact-us .submit {
+    width: 30%;
+    align-self: center;
+  }
+}

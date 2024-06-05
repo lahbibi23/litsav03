@@ -1,0 +1,186 @@
+
+
+/*=========================
+  -  inscription
+  =========================*/
+
+
+  section.contact-us{
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 3rem;
+
+  }
+
+  
+  .tittle {
+    font-size: 1.2rem;
+   color: var(--title);
+    text-align: center;
+    font-weight: bold;
+ 
+  }
+  
+section.contact-us .form-field{
+  flex-direction: column;
+ align-content: center;
+
+}
+
+
+  /* section.contact-us .sub-title {
+    color: rgb(70, 68, 68);
+    margin-left: 1rem;
+    line-height: 1rem;
+    font-size: 1rem;
+  } */
+  .tittre{
+    color: rgb(70, 68, 68);
+ 
+
+    font-size: 2rem;
+  }
+  section.contact-us label {
+    color: rgb(70, 68, 68);
+   margin: 1rem;
+  }
+  
+
+
+
+
+
+  section.contact-us #email,
+  section.contact-us #message,
+  section.contact-us #fullName,
+  section.contact-us #sujet,
+  section.contact-us #numéro,
+  section.contact-us #phoneNumber,
+  section.contact-us #fonction,
+  section.contact-us #université
+   {
+    all: unset;
+    background-color: rgba(63, 63, 70, 0.15);
+    border: 1px solid rgb(217, 217, 219);
+    width: 50rem;
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+    border-radius: 5px;
+    transition: 0.3s;
+    font-size: 1.1rem;
+    margin-top: 0;
+    
+  }
+  
+  section.contact-us #email:focus,
+  section.contact-us #message:focus ,
+  section.contact-us #fullName:focus ,
+  section.contact-us #sujet:focus,
+  section.contact-us #numéro:focus,
+  section.contact-us #phoneNumber:focus,
+  section.contact-us #fonction:focus,
+  section.contact-us #université:focus{
+    border: 1px solid rgb(73, 59, 204);
+  }
+  
+  section.contact-us #email:hover,
+  section.contact-us #message:hover,
+  section.contact-us #fullName:hover,
+  section.contact-us #sujet:hover,
+  section.contact-us #numéro:hover,
+  section.contact-us #phoneNumber:hover,
+  section.contact-us #fonction:hover,
+  section.contact-us #université:hover{
+    border: 1px solid rgb(73, 59, 204);
+  }
+  
+  section.contact-us #message {
+    min-height: 9rem;
+    resize: vertical;
+  }
+  
+
+  section.contact-us  .cheakbox{
+
+    font-size: 1.1rem;
+    color: rgb(70, 68, 68);
+    background-color: rgba(63, 63, 70, 0.15);
+    border: 1px solid rgb(217, 217, 219);
+    padding: 0.5rem 1rem;
+    margin-left: 1rem;
+  }
+
+
+
+  section.contact-us .submit {
+    background-color: rgb(134, 138, 180);
+    width: 6rem;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 10px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 0.5rem; 
+    border: 1px solid rgb(234, 234, 238);
+    font-weight:bold ;
+
+  }
+  
+  .fichier {
+ 
+    flex-direction: column;
+    margin: 1rem;
+  } 
+  section.contact-us .submit:hover ,  section.contact-us .submit2:hover {
+    scale: 0.97;
+    cursor: pointer;
+  }
+  
+  section.contact-us .submit2 {
+    background-color: rgb(134, 138, 180);
+    width: 6rem;
+    margin-left: 40%;
+    font-weight:bold ;
+    padding: 0.5rem;
+    text-align: center;
+    font-size: 15px;
+    border-radius: 5px;
+    transition: 0.3s;
+    margin-top: 2rem; 
+    border: 1px solid rgb(234, 234, 238);
+
+  }
+
+/*=======================
+responsve
+=========================*/
+
+  @media (max-width :600px){
+  
+    
+      section.contact-us form {
+        display: flex;
+        flex-direction: column;
+        width: 85%;
+      }
+    
+      section.contact-us form div.flex {
+        flex-direction: column;
+        align-items: start;
+      }
+    
+      section.contact-us #email,
+      section.contact-us #message {
+        width: 100%;
+        margin-left: 0;
+        padding: 0.7rem 0;
+        margin-top: 1rem;
+      }
+    
+      section.contact-us .submit {
+        width: 30%;
+        align-self: center;
+      }
+    }
+  

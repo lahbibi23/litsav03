@@ -1,0 +1,92 @@
+.hero-section {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 5rem;
+  width: 90%;
+  gap: 2rem;
+
+}
+
+.hero-left-section {
+  box-shadow: 1px 1px 40px #2323242a;
+  border: 1px solid rgb(173, 197, 213);
+  border-radius: 10px;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.hero-section h1.title {
+  width: 80%;
+  padding: 0.5rem 1.5rem;
+  color: var(--title);
+  font-weight: bold;
+  font-size: 1.5rem;
+}
+
+.hero-section p.sub-title {
+  padding: 1.5rem 1.5rem;
+  color: var(--sub-title);
+  font-size: 1.1rem;
+  font-style: normal;
+  margin-bottom: 3rem;
+}
+
+.hero-right-section {
+  width: 100%;
+  height: auto;
+}
+
+.hero-right-section img {
+  width: 100%;
+  height: 100%;
+}
+
+.hero-section button.plus {
+  /* position: absolute; */
+  right: 2rem;
+  bottom: 0.5rem;
+  border-radius: 55px;
+  padding: 4px 10px;
+  width: 30%;
+  align-self: center;
+  margin-bottom: 2rem;
+  border: 1px solid rgb(47, 100, 136, 1);
+  transition: 0.5ms;
+}
+.hero-section button.plus:hover {
+  cursor: pointer;
+  scale: 1.01;
+  font-weight: bold;
+  border: 1px solid rgb(47, 100, 136 );
+}
+
+/*=========================
+-Respobnsive
+===========================*/
+
+@media (max-width: 800px) {
+  .text {
+    bottom: 3rem;
+  }
+  button.plus {
+    position: relative;
+    bottom: 30px;
+    left: 1px;
+    border-radius: 10px;
+  }
+  .hero-section {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 5rem;
+    width: 90%;
+    gap: 2rem;
+    flex-direction: column;
+  }
+  .hero-section button.plus {
+    position: absolute;
+    width: 20%;
+    left: 20rem;
+  }
+}
